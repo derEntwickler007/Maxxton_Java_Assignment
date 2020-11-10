@@ -29,6 +29,7 @@ public class MainClass {
 		 daterange4.setStartDate(dateFormat.parse("10/04/2020"));
 		 daterange4.setEndDate(dateFormat.parse("15/05/2020"));
 		 
+		 //date ranges should not be merged
 		 DateRange daterange21=new DateRange();
 		 daterange21.setStartDate(dateFormat.parse("01/01/2020"));
 		 daterange21.setEndDate(dateFormat.parse("30/01/2020"));
@@ -37,6 +38,7 @@ public class MainClass {
 		 daterange22.setStartDate(dateFormat.parse("02/01/2020"));
 		 daterange22.setEndDate(dateFormat.parse("20/03/2020"));
 		 
+		 //date ranges should be merged
 		 DateRange daterange31=new DateRange();
 		 daterange31.setStartDate(dateFormat.parse("10/03/2020"));
 		 daterange31.setEndDate(dateFormat.parse("15/04/2020"));
