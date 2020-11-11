@@ -15,7 +15,6 @@ public class MainClass {
 		 String startDate;
 		 String endDate;
 		 SimpleDateFormat dateFormat=new SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH);
-		 dateFormat.setLenient(false);  
 		 Scanner scanner=new Scanner(System.in);		 
 		 for(int i=0;i<2;i++) {
 			 System.out.println("Date Range"+(i+1));
@@ -32,7 +31,7 @@ public class MainClass {
 		 }		 
 		 SimpleDateFormat dateFormatter = new SimpleDateFormat("dd MMM yyyy");  
 		 DateMarger dateMarger=new DateMarger();
-		 System.out.println("\tMarged Date");
+		 System.out.println("\n\tMarged Date");
 		 for(DateRange range:dateMarger.mergeDates(dateRanges)){
 			 System.out.println(dateFormatter.format(range.getStartDate())+" - "+dateFormatter.format(range.getEndDate()));
 		 }
